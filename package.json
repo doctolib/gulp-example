@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doctolib/github-example.git"
+    "url": "git+https://github.com/doctolib/gulp-example.git"
   },
   "keywords": [
     "gulpplugin",
@@ -15,9 +15,9 @@
   "author": "Doctolib <tech@doctolib.fr>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/doctolib/github-example/issues"
+    "url": "https://github.com/doctolib/gulp-example/issues"
   },
-  "homepage": "https://github.com/doctolib/github-example#readme",
+  "homepage": "https://github.com/doctolib/gulp-example#readme",
   "dependencies": {
     "gulp-add-src": "^0.2.0",
     "lodash.template": "^3.6.2",
