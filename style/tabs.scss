@@ -1,0 +1,30 @@
+// Tabs
+// --------------------
+
+.tabs [role=tablist] {
+  margin: 0;
+	padding: 0;
+}
+
+.tabs [role=tab] {
+	display: inline-block;
+	border: 1px solid transparent;
+	border-bottom: none;
+	bottom: -2px;
+	position: relative;
+	list-style: none;
+	padding: 6px 12px;
+	cursor: pointer;
+	position: relative;
+}
+
+.tabs [role=tab][aria-selected=true] {
+	background: $code-background;
+	border-color: darken($code-background, 10);
+	border-radius: 5px 5px 0 0;
+  font-weight: bold;
+}
+
+.tabs [role=tab]:focus {
+	outline: none;
+}

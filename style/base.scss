@@ -1,0 +1,175 @@
+// Base
+// ------------------------------
+
+body {
+  color: $text-color;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 0 $gutter;
+}
+
+
+// Headings
+// ------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: .66em;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: .85em;
+}
+
+h6 {
+  font-size: .75em;
+}
+
+
+// Layout
+// ------------------------------
+
+// common
+
+.page-body, .page-footer, .page-header {
+  padding: $gutter 0;
+}
+
+// header
+
+.page-header {
+  background-color: $link-color;
+  color: mix(white, $link-color, 75%);
+
+  h1, h2, h3 {
+    color: white;
+  }
+
+  p {
+    font-size: 1.1em;
+    margin: 0;
+  }
+
+  a {
+    border-bottom: 1px solid fade(white, 30%);
+    color: white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: white;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+// subheader
+
+.page-subheader {
+  background-color: mix($link-color, white, 10%);
+  line-height: 20px;
+  padding: $gutter 0;
+}
+
+.page-subheader-button {
+  float: right;
+}
+
+.page-subheader-link {
+  border-bottom: 1px solid fade($link-color, 30%);
+  outline: none;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    border-bottom-color: $link-color;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+// footer
+
+.page-footer {
+  background-color: #fafafa;
+  color: #999;
+  padding: $gutter 0;
+  text-align: center;
+
+  a {
+    color: black;
+  }
+}
+
+// Code
+
+:not(pre) > code[class*="language-"] {
+  display: block;
+	border: 1px solid darken($code-background, 10);
+	border-radius: 3px;
+  padding: .6em;
+  overflow: auto;
+}
+
+// Layout changes based on screen dimensions
+
+@media (min-width: 480px) {
+  .page-body, .page-header {
+    padding: ($gutter * 2) 0;
+  }
+
+  .page-header {
+    font-size: 1.4em;
+  }
+
+  .page-subheader {
+    font-size: 1.125em;
+    line-height: 28px;
+  }
+}
+
+// Misc
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

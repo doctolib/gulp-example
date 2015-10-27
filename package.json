@@ -1,0 +1,27 @@
+{
+  "name": "@doctolib/gulp-example",
+  "version": "0.0.0",
+  "description": "Gulp plugin to generate example.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doctolib/github-example.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "github",
+    "example"
+  ],
+  "author": "Doctolib <tech@doctolib.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doctolib/github-example/issues"
+  },
+  "homepage": "https://github.com/doctolib/github-example#readme",
+  "dependencies": {
+    "gulp-add-src": "^0.2.0",
+    "lodash.template": "^3.6.2",
+    "through2": "^2.0.0",
+    "vinyl-fs": "^2.2.1"
+  }
+}
