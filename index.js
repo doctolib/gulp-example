@@ -17,7 +17,7 @@ exports.generateIndex = function (pkg) {
     .pipe(through.obj((file, enc, cb) => {
       const compiled = _template(file.contents.toString('utf8'));
       const matches = pkg.repository.url.match(/([^\/]+\/[^\/]+).git$/);
-      const shortRepo = matches ? matches[1] : 'doctolib/' + pkg.name;
+      const shortRepo = matches ? matches[1] : `doctolib/${pkg.name}`;
       pkg.examples = pkg.examples || {};
 
       const data = compiled({
@@ -28,7 +28,7 @@ exports.generateIndex = function (pkg) {
         codeHighlighting: pkg.examples.codeHighlighting || false,
         url: pkg.homepage,
         repository: {
-          url: 'https://github.com/' + shortRepo,
+          url: `https://github.com/${shortRepo}`,
           short: shortRepo
         },
         private: pkg.license === 'UNLICENSED'
@@ -47,9 +47,9 @@ exports.generateIndex = function (pkg) {
  */
 
 exports.generateVendor = function (pkg) {
-  return pkg.examples && pkg.examples.codeHighlighting ?
-    addsrc(path.join(__dirname, 'templates/vendor/prism*'), {
+  return pkg.examples && pkg.examples.codeHighlighting
+    ? addsrc(path.join(__dirname, 'templates/vendor/prism*'), {
       base: path.join(__dirname, 'templates/vendor')
-    }) :
-    through.obj();
+    })
+    : through.obj();
 };
