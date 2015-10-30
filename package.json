@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Gulp plugin to generate example.",
   "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doctolib/gulp-example.git"
@@ -23,5 +26,9 @@
     "lodash.template": "^3.6.2",
     "through2": "^2.0.0",
     "vinyl-fs": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.7.3",
+    "eslint-config-doctolib": "^1.0.2"
   }
 }
