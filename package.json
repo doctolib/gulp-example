@@ -1,6 +1,6 @@
 {
   "name": "@doctolib/gulp-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp plugin to generate example.",
   "main": "index.js",
   "scripts": {
