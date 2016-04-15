@@ -28,7 +28,8 @@
     "vinyl-fs": "^2.2.1"
   },
   "devDependencies": {
-    "eslint": "^1.7.3",
-    "eslint-config-doctolib": "^1.0.2"
+    "eslint": "^2.7.0",
+    "eslint-config-doctolib": "^2.0.0",
+    "lodash-template": "^1.0.0"
   }
 }
